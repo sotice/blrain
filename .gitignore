@@ -1,0 +1,18 @@
+# OS
+.DS_Store
+Thumbs.db
+desktop.ini
+
+# Editor
+.vscode/
+.idea/
+*.swp
+*.swo
+
+# Node (not used but defensive)
+node_modules/
+npm-debug.log*
+
+# Python (defensive)
+__pycache__/
+*.pyc

@@ -1,34 +1,47 @@
-# AGENTS.md — The Digital Diarist
+# AGENTS.md — 数字日记
 
 ## Project structure
 
 ```
-thedigitaldiarist/          # Neocities site root
-├── index.html              # Homepage (single-page site)
+digitaldiarist/             # Repository root (= Neocities site root)
+├── index.html              # Homepage
 ├── style.css               # All styles (monolithic, no preprocessor)
-├── blog/                   # Blog (local, static HTML)
-└── elements/               # Static assets (images, fonts, favicon)
+├── about/                  # 关于
+│   └── index.html
+├── reading/                # 阅读
+│   └── index.html
+├── watching/               # 观影
+│   └── index.html
+├── listening/              # 音乐
+│   └── index.html
+├── writing/                # 写作
+│   └── index.html
+└── elements/               # Static assets
+    ├── logo/               # Brand / header image
+    ├── img/                # Content images
+    ├── patterns/           # Background textures
+    └── favicon/            # Empty (placeholder for favicons)
 ```
 
 - **No build step, no dependencies, no package manager.**
-- Sub-pages (`/about`, `/reading`, etc.) linked in nav but not in this repo — they live on Neocities.
-- Blog is local in `blog/` (previously hosted on Bear Blog).
+- Each section is a folder containing an `index.html` — open `/reading/` to read the reading page, etc.
+- Sub-pages inside sections (e.g. `/reading/journal/2025/`, `/reading/e-lit/`) referenced in `index.html` do not exist yet — placeholders only.
 
 ## Local development
 
-Open `thedigitaldiarist/index.html` in a browser, or serve with any static file server:
+Open `index.html` in a browser, or serve the repo root with any static file server:
 
 ```powershell
-npx serve thedigitaldiarist
+npx serve .
 ```
 
 ## Deployment
 
-Upload contents of `thedigitaldiarist/` to [Neocities](https://neocities.org). No build step — files upload as-is.
+Upload the entire repository root to [Neocities](https://neocities.org). No build step — files upload as-is.
 
 ## Notes
 
 - No JavaScript on the site.
-- Fonts are dual-sourced: Google Fonts CDN (Fraunces) + local WOFF in `/elements/googlefonts/`.
+- Fonts are dual-sourced: Google Fonts CDN (Fraunces, Noto Serif SC) + local WOFF fallbacks in `/elements/googlefonts/` and `/elements/handwrittenfonts/` (these fallback directories are referenced by `style.css` but not yet in the repo).
 - RSS feed at `thedigitaldiarist.neocities.org/feed.xml` (hosted on Neocities, not in repo).
-- The `elements/favicon/` directory is empty (placeholder for future favicons).
+- `elements/favicon/` is empty — placeholder for future favicons.
