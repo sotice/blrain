@@ -6,12 +6,13 @@
 thedigitaldiarist/          # Neocities site root
 ├── index.html              # Homepage (single-page site)
 ├── style.css               # All styles (monolithic, no preprocessor)
+├── blog/                   # Blog (local, static HTML)
 └── elements/               # Static assets (images, fonts, favicon)
 ```
 
 - **No build step, no dependencies, no package manager.**
 - Sub-pages (`/about`, `/reading`, etc.) linked in nav but not in this repo — they live on Neocities.
-- Blog is hosted externally at `thedigitaldiarist.bearblog.dev`.
+- Blog is local in `blog/` (previously hosted on Bear Blog).
 
 ## Local development
 
