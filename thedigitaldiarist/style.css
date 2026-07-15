@@ -35,6 +35,29 @@
     font-display: swap;
 }
 
+@font-face {
+    font-family: 'Fraunces';
+    src: url('/elements/googlefonts/Fraunces-Italic.woff') format('woff');
+    font-style: italic;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Fraunces';
+    src: url('/elements/googlefonts/Fraunces.woff') format('woff');
+    font-style: normal;
+    font-display: swap;
+}
+
+
+@font-face {
+    font-family: 'Ukulele Setlist';
+    src: url('/elements/handwrittenfonts/ukulelesetlist-regular-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+    font-display: normal;
+}
+
 /* Standard elements */
 html {
   scroll-behavior: smooth;
@@ -43,7 +66,7 @@ html {
 body {
   background-color: #f6eee3;
   color: #4f4f4f;
-  font-family: "Fraunces", "Minion Pro", "Arial", sans-serif;
+  font-family: "Fraunces", "Minion Pro", "Arial", "sans-serif";
   font-weight: 350;
   letter-spacing: -0.3px;
   margin: 0;
@@ -447,16 +470,6 @@ date {
     height: 100%;
     max-width: 100%;
     margin: 0;
-  }
-
-  .siteheader {
-    flex-wrap: wrap;
-    justify-content: center;
-    text-align: center;
-  }
-
-  .siteheader img {
-    float: none;
   }
 
   .window {
