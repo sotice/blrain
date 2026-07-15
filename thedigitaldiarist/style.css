@@ -64,8 +64,8 @@ html {
 }
 
 body {
-  background-color: #f6eee3;
-  color: #4f4f4f;
+  background-color: #1a1f2e;
+  color: #c5c2b8;
   font-family: "Fraunces", "Minion Pro", "Arial", "sans-serif";
   font-weight: 350;
   letter-spacing: -0.3px;
@@ -98,9 +98,9 @@ section {
 
 /* for boxes with coloured headers */
 .window {
-  border: 1px solid #444444;
-  background-color: #fff8f2;
-  color: #444444;
+  border: 1px solid #6b7a8a;
+  background-color: #232938;
+  color: #c5c2b8;
   flex: 5;
   width: 100%;
   max-height: 300px;
@@ -111,22 +111,22 @@ section {
 .window header {
   display: flex;
   flex-wrap: wrap;
-  border-bottom: 1px solid black;
-  background-color: #915768;
+  border-bottom: 1px solid #6b7a8a;
+  background-color: #7a8da6;
   padding: 10px 10px 10px 20px;
   position: sticky;
   top: 0;
 }
 
 /* for the feature green window */
-.window .green {background-color: #adbdaf;}
-.window .green h2 {color: #353535;}
-.window .green date {color: #353535;}
+.window .green {background-color: #4a6b5e;}
+.window .green h2 {color: #e8e6df;}
+.window .green date {color: #e8e6df;}
 
 .window h2 {
   flex: auto;
   margin: 0 auto 0 auto;
-  color: #fff7f0;
+  color: #1a1f2e;
   font-family: 'Fraunces', 'Minion Pro', serif;
   font-size: 1.1em;
   font-weight: 400;
@@ -134,7 +134,7 @@ section {
 
 .window date {
   float: right;
-  color: #fff7f0;
+  color: #1a1f2e;
 }
 
 .window article {
@@ -149,7 +149,7 @@ section {
 .flexleft, .flexright {
   display: inline-flex;
   height: 300px;
-  border: 1px solid #444444;
+  border: 1px solid #6b7a8a;
   max-width: 50%;
   object-fit: cover;
 }
@@ -163,15 +163,15 @@ section {
 }
 
 .greytxt {
-  color: #353535;
+  color: #9ba8b8;
 }
 
 /* horizonal card with image and caption */
 .photocard {
   overflow: hidden;
-  border: 1px solid #4f4f4f;
-  background-color: #915768;
-  color: #fff7f1;
+  border: 1px solid #6b7a8a;
+  background-color: #7a8da6;
+  color: #1a1f2e;
 }
 
 .photocard img {
@@ -179,7 +179,7 @@ section {
   height: 100%;
   max-height: 300px;
   float: left;
-  background-color: #fff7f1;
+  background-color: #1a1f2e;
 }
 
 .photocard article {
@@ -187,7 +187,7 @@ section {
 }
 
 .photocard h2 {
-  color: #fff7f1;
+  color: #1a1f2e;
 }
 
 @media only screen and (max-width: 480px) {
@@ -209,7 +209,7 @@ h1 {
   font-size: 2.3em;
   font-family: "Fraunces", "Minion Pro", serif;
   font-weight: 800;
-  color: #915768;
+  color: #7a8da6;
   margin: 0 auto 0.5em auto;
   line-height: 1.2em;
 }
@@ -218,7 +218,7 @@ h2 {
   font-size: 1.8em;
   font-family: "Fraunces", "Minion Pro", serif;
   font-weight: 700;
-  color: #545454;
+  color: #9ba8b8;
   margin: 0.25em auto 0.25em auto;
   line-height: 1em;
 }
@@ -227,7 +227,7 @@ h3 {
   font-size: 1.6em;
   font-family: "Fraunces", "Minion Pro", serif;
   font-weight: 600;
-  color: #545454;
+  color: #9ba8b8;
   margin: 0.25em auto 0.25em auto;
   line-height: 1em;
 }
@@ -255,12 +255,12 @@ p {
 }
 
 a {
-  color: #a31f46;
-  text-shadow: 2px 1px 3px #ffc8db;
+  color: #c87944;
+  text-shadow: 2px 1px 3px rgba(200, 121, 68, 0.3);
 }
 
 a:hover {
-  color: #ff963a;
+  color: #e0a070;
 }
 
 /* to create icon links */
@@ -288,10 +288,10 @@ a:hover {
 
 /* Button navigation links */
 .button {
-  color: #8a6a72;
+  color: #9ba8b8;
   text-decoration: none;
-  text-shadow: 2px 1px 3px #ffccd5;
-  background: white;
+  text-shadow: 2px 1px 3px rgba(122, 141, 166, 0.2);
+  background: #232938;
   padding: 5px;
   border-radius: 5px;
   border: 1px solid;
@@ -300,12 +300,12 @@ a:hover {
 }
 
 mark {
-  color: #696969;
-  background: #ffea76;
+  color: #e8e6df;
+  background: #c87944;
 }
 
 :target {
-  background-color: #ffdc5d5c;
+  background-color: rgba(200, 121, 68, 0.35);
   scroll-margin-top: 2em;
 }
 
@@ -319,27 +319,27 @@ ul ul ul ul {
 }
 
 ::selection {
-  background-color: #ffdc5dba;
+  background-color: rgba(200, 121, 68, 0.4);
 }
 
 blockquote {
-  border-left: 1px solid grey;
+  border-left: 1px solid #6b7a8a;
   padding-left: 1em;
   font-style: italic;
   font-weight: bold;
   letter-spacing: 0.5px;
-  color: #915768;
+  color: #7a8da6;
 }
 
 hr {
-  border: 1px dashed #9d8189ab;
+  border: 1px dashed #6b7a8a9e;
   margin: 1em 10%;
 }
 
 /* top menu */
 .siteheader {
-  background: #efcaad;
-  border-bottom: 1px solid #444444;
+  background: #232938;
+  border-bottom: 1px solid #6b7a8a;
   position: sticky;
   top: 0;
   z-index: 5;
@@ -366,15 +366,15 @@ nav a {
   padding: 5px;
   border-radius: 0;
   display: inline-block;
-  color: #6e4451;
+  color: #9ba8b8;
 }
 
 /* navigation button links */
 .nav {
-  color: #8a6a72;
+  color: #9ba8b8;
   text-decoration: none;
-  text-shadow: 2px 1px 3px #ffccd5;
-  background: white;
+  text-shadow: 2px 1px 3px rgba(122, 141, 166, 0.2);
+  background: #232938;
   padding: 5px;
   border-radius: 5px;
   border: 1px solid;
@@ -398,7 +398,7 @@ date {
   letter-spacing: 1px;
   font-size: 0.8em;
   font-weight: bold;
-  color: #915768;
+  color: #c87944;
   text-align: right;
 }
 
@@ -418,24 +418,24 @@ date {
   position: fixed;
   bottom: 3%;
   right: 3%;
-  background-color: #ffffff85;
+  background-color: rgba(35, 41, 56, 0.85);
   padding: 5px;
   line-height: 0.5em;
   border-radius: 5px;
 }
 
 ::-webkit-scrollbar-thumb:hover {
-  background: #915768;
-  border-left: 1px solid black;
+  background: #c87944;
+  border-left: 1px solid #6b7a8a;
 }
 
 ::-webkit-scrollbar-thumb {
-  background: #9157685e;
+  background: rgba(122, 141, 166, 0.4);
 }
 
 ::-webkit-scrollbar-track {
-  background: #91576854;
-  border-left: 1px solid black;
+  background: rgba(122, 141, 166, 0.2);
+  border-left: 1px solid #6b7a8a;
 }
 
 ::-webkit-scrollbar {
@@ -443,9 +443,9 @@ date {
 }
 
 /* accent colour boxes */
-.redbox {border: 1px solid #4f4f4f; padding: 1em; background-color: #9157682e}
-.greenbox {border: 1px solid #4f4f4f; padding: 1em; background-color: #adbdaf50}
-.goldbox {border: 1px solid #4f4f4f; padding: 1em; background-color: #efcaad50}
+.redbox {border: 1px solid #6b7a8a; padding: 1em; background-color: rgba(122, 141, 166, 0.15)}
+.greenbox {border: 1px solid #6b7a8a; padding: 1em; background-color: rgba(74, 107, 94, 0.2)}
+.goldbox {border: 1px solid #6b7a8a; padding: 1em; background-color: rgba(200, 121, 68, 0.12)}
 
 .cursive {
   font-family: "Homemade Apple", sans-serif;
