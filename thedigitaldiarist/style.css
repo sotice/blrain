@@ -1,0 +1,508 @@
+@font-face {
+    font-family: 'Meera Inimai';
+    src: url('/elements/googlefonts/meerainimai-regular-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Homemade Apple';
+    src: url('/elements/googlefonts/HomemadeApple-webfont.woff') format('woff');
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Minion Pro';
+    src: url('/elements/googlefonts/MinionPro-Medium.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Minion Pro';
+    src: url('/elements/googlefonts/MinionPro-Semibold.woff') format('woff');
+    font-weight: 600;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Deneane';
+    src: url('/elements/googlefonts/Deneane.woff') format('woff');
+    font-weight: 100;
+    font-style: normal;
+    font-display: swap;
+}
+
+/* Standard elements */
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  background-color: #f6eee3;
+  color: #4f4f4f;
+  font-family: "Fraunces", "Minion Pro", "Arial", sans-serif;
+  font-weight: 350;
+  letter-spacing: -0.3px;
+  margin: 0;
+  line-height: 1.25em;
+  font-size: 1.1em;
+  background-image: url("elements/patterns/rice-paper-2.png");
+  background-blend-mode: screen;
+}
+
+main {
+  width: 60%;
+  max-width: 1000px;
+  margin: 1em auto 1em auto;
+}
+
+section {
+  margin-bottom: 1em;
+}
+
+/* quick flexbox */
+.flex, .flexreverse {
+  display: flex;
+  margin: 0 0 1em 0;
+}
+
+.flexreverse {
+  flex-direction: row-reverse;
+}
+
+/* for boxes with coloured headers */
+.window {
+  border: 1px solid #444444;
+  background-color: #fff8f2;
+  color: #444444;
+  flex: 5;
+  width: 100%;
+  max-height: 300px;
+  overflow: auto;
+  margin: 0 0 1em 0;
+}
+
+.window header {
+  display: flex;
+  flex-wrap: wrap;
+  border-bottom: 1px solid black;
+  background-color: #915768;
+  padding: 10px 10px 10px 20px;
+  position: sticky;
+  top: 0;
+}
+
+/* for the feature green window */
+.window .green {background-color: #adbdaf;}
+.window .green h2 {color: #353535;}
+.window .green date {color: #353535;}
+
+.window h2 {
+  flex: auto;
+  margin: 0 auto 0 auto;
+  color: #fff7f0;
+  font-family: 'Fraunces', 'Minion Pro', serif;
+  font-size: 1.1em;
+  font-weight: 400;
+}
+
+.window date {
+  float: right;
+  color: #fff7f0;
+}
+
+.window article {
+  padding: 0.5em 1em 0.5em 1em;
+}
+
+/* both the flex class and window class have bottom margins. this prevents them from doubling. */
+.flex .window, .flexreverse .window {
+  margin: 0;
+}
+
+.flexleft, .flexright {
+  display: inline-flex;
+  height: 300px;
+  border: 1px solid #444444;
+  max-width: 50%;
+  object-fit: cover;
+}
+
+.flexleft {
+  margin: 0 10px 0 0;
+}
+
+.flexright {
+  margin: 0 0 0 10px;
+}
+
+.greytxt {
+  color: #353535;
+}
+
+/* horizonal card with image and caption */
+.photocard {
+  overflow: hidden;
+  border: 1px solid #4f4f4f;
+  background-color: #915768;
+  color: #fff7f1;
+}
+
+.photocard img {
+  margin: 0 1em 0 0;
+  height: 100%;
+  max-height: 300px;
+  float: left;
+  background-color: #fff7f1;
+}
+
+.photocard article {
+  padding: 1em;
+}
+
+.photocard h2 {
+  color: #fff7f1;
+}
+
+@media only screen and (max-width: 480px) {
+  .photocard img {
+    margin: 0 0 1em 0;
+  }
+}
+
+img {
+  display: block;
+  margin: 0.5em;
+}
+
+iframe {
+  border: 1px solid black;
+}
+
+h1 {
+  font-size: 2.3em;
+  font-family: "Fraunces", "Minion Pro", serif;
+  font-weight: 800;
+  color: #915768;
+  margin: 0 auto 0.5em auto;
+  line-height: 1.2em;
+}
+
+h2 {
+  font-size: 1.8em;
+  font-family: "Fraunces", "Minion Pro", serif;
+  font-weight: 700;
+  color: #545454;
+  margin: 0.25em auto 0.25em auto;
+  line-height: 1em;
+}
+
+h3 {
+  font-size: 1.6em;
+  font-family: "Fraunces", "Minion Pro", serif;
+  font-weight: 600;
+  color: #545454;
+  margin: 0.25em auto 0.25em auto;
+  line-height: 1em;
+}
+
+h4 {
+  font-size: 1.4em;
+  font-weight: 500;
+  margin: 0.25em auto 0.25em auto;
+}
+
+h5 {
+  font-size: 1.4em;
+  font-weight: 400;
+  margin: 0.25em auto 0.25em auto;
+}
+
+h6 {
+  font-size: 1.25em;
+  font-weight: normal;
+  margin: 0.25em auto 0.25em auto;
+}
+
+p {
+  margin: 0.5em auto 0.5em auto;
+}
+
+a {
+  color: #a31f46;
+  text-shadow: 2px 1px 3px #ffc8db;
+}
+
+a:hover {
+  color: #ff963a;
+}
+
+/* to create icon links */
+.icon {
+  text-shadow: none;
+  text-decoration: none;
+  margin: 0 1em 0 0;
+}
+
+.image::before {
+  content: "📷";
+}
+
+  .image.icon {
+    margin-top: -3px;
+  }
+
+.audio::before {
+  content: "🔊";
+}
+
+.video::before {
+  content: "️📺️";
+}
+
+/* Button navigation links */
+.button {
+  color: #8a6a72;
+  text-decoration: none;
+  text-shadow: 2px 1px 3px #ffccd5;
+  background: white;
+  padding: 5px;
+  border-radius: 5px;
+  border: 1px solid;
+  display: inline-block;
+  margin: 0.5em 0.5em 0.5em 0;
+}
+
+mark {
+  color: #696969;
+  background: #ffea76;
+}
+
+:target {
+  background-color: #ffdc5d5c;
+  scroll-margin-top: 2em;
+}
+
+ul {
+  margin: 0.5em 0 0.5em 0;
+  line-height: 1.1em;
+}
+
+ul ul ul ul {
+  list-style: circle;
+}
+
+::selection {
+  background-color: #ffdc5dba;
+}
+
+blockquote {
+  border-left: 1px solid grey;
+  padding-left: 1em;
+  font-style: italic;
+  font-weight: bold;
+  letter-spacing: 0.5px;
+  color: #915768;
+}
+
+hr {
+  border: 1px dashed #9d8189ab;
+  margin: 1em 10%;
+}
+
+/* top menu */
+.siteheader {
+  background: #efcaad;
+  border-bottom: 1px solid #444444;
+  position: sticky;
+  top: 0;
+  z-index: 5;
+  text-align: right;
+  font-size: 1rem;
+}
+
+.siteheader img {
+  float: left;
+  opacity: 0.9;
+  mix-blend-mode: hard-light;
+  max-height: 2rem;
+  margin-bottom: 0;
+}
+
+nav {
+  padding: 0.5em;
+}
+
+nav a {
+  margin: 0 10px 0 0;
+  text-decoration: none;
+  text-shadow: none;
+  padding: 5px;
+  border-radius: 0;
+  display: inline-block;
+  color: #6e4451;
+}
+
+/* navigation button links */
+.nav {
+  color: #8a6a72;
+  text-decoration: none;
+  text-shadow: 2px 1px 3px #ffccd5;
+  background: white;
+  padding: 5px;
+  border-radius: 5px;
+  border: 1px solid;
+  display: inline-block;
+  margin: 0.5em 0.5em 0.5em 0;
+}
+
+figure {
+  margin: 0;
+}
+
+figcaption {
+  font-family: "Meera Inimai", sans-serif;
+  font-weight: bold;
+  font-size: 0.8em;
+  letter-spacing: 0.01em;
+}
+
+date {
+  font-family: "Meera Inimai";
+  letter-spacing: 1px;
+  font-size: 0.8em;
+  font-weight: bold;
+  color: #915768;
+  text-align: right;
+}
+
+/* fade in on hover */
+.hover {
+  opacity: 0.5;
+  transition: 0.3s;
+}
+
+.hover:hover {
+  opacity: 1;
+  transition: 0.3s;
+}
+
+/* scroll bars and behaviour */
+.scrolltotop {
+  position: fixed;
+  bottom: 3%;
+  right: 3%;
+  background-color: #ffffff85;
+  padding: 5px;
+  line-height: 0.5em;
+  border-radius: 5px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #915768;
+  border-left: 1px solid black;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #9157685e;
+}
+
+::-webkit-scrollbar-track {
+  background: #91576854;
+  border-left: 1px solid black;
+}
+
+::-webkit-scrollbar {
+   width: 10px;
+}
+
+/* accent colour boxes */
+.redbox {border: 1px solid #4f4f4f; padding: 1em; background-color: #9157682e}
+.greenbox {border: 1px solid #4f4f4f; padding: 1em; background-color: #adbdaf50}
+.goldbox {border: 1px solid #4f4f4f; padding: 1em; background-color: #efcaad50}
+
+.cursive {
+  font-family: "Homemade Apple", sans-serif;
+}
+
+@media only screen and (max-width: 1024px) {
+  main {
+    width: 75%;
+  }
+}
+
+@media only screen and (max-width: 780px) {
+  main {
+    width: 75%;
+  }
+
+  .flex, .flexreverse {
+    display: block;
+  }
+
+  .flexleft, .flexright {
+    height: 100%;
+    max-width: 100%;
+    margin: 0;
+  }
+
+  .siteheader {
+    flex-wrap: wrap;
+    justify-content: center;
+    text-align: center;
+  }
+
+  .siteheader img {
+    float: none;
+  }
+
+  .window {
+    max-height: none;
+  }
+
+  .poster {
+    max-width: none;
+    margin: 0 0 10px 0;
+  }
+
+  blockquote {
+    margin-left: 0;
+  }
+}
+
+@media only screen and (max-width: 480px) {
+  main {
+    width: 90%;
+  }
+
+  .flex, .flexreverse {
+    display: block;
+  }
+
+  .flexleft, .flexright {
+    height: 100%;
+    max-width: 100%;
+    margin: 0;
+  }
+
+  .window {
+    max-height: none;
+  }
+
+  .poster {
+    max-width: none;
+    margin: 0 0 10px 0;
+  }
+
+  blockquote {
+    margin-left: 0;
+  }
+
+  img {
+    float: none;
+    max-height: 100%;
+  }
+}
