@@ -66,7 +66,7 @@ html {
 body {
   background-color: #1a1f2e;
   color: #c5c2b8;
-  font-family: "Fraunces", "Minion Pro", "Arial", "sans-serif";
+  font-family: "Fraunces", "Minion Pro", "Noto Serif SC", "Arial", "sans-serif";
   font-weight: 350;
   letter-spacing: -0.3px;
   margin: 0;
@@ -127,7 +127,7 @@ section {
   flex: auto;
   margin: 0 auto 0 auto;
   color: #1a1f2e;
-  font-family: 'Fraunces', 'Minion Pro', serif;
+  font-family: 'Fraunces', 'Minion Pro', 'Noto Serif SC', serif;
   font-size: 1.1em;
   font-weight: 400;
 }
@@ -207,7 +207,7 @@ iframe {
 
 h1 {
   font-size: 2.3em;
-  font-family: "Fraunces", "Minion Pro", serif;
+  font-family: "Fraunces", "Minion Pro", "Noto Serif SC", serif;
   font-weight: 800;
   color: #7a8da6;
   margin: 0 auto 0.5em auto;
@@ -216,7 +216,7 @@ h1 {
 
 h2 {
   font-size: 1.8em;
-  font-family: "Fraunces", "Minion Pro", serif;
+  font-family: "Fraunces", "Minion Pro", "Noto Serif SC", serif;
   font-weight: 700;
   color: #9ba8b8;
   margin: 0.25em auto 0.25em auto;
@@ -225,7 +225,7 @@ h2 {
 
 h3 {
   font-size: 1.6em;
-  font-family: "Fraunces", "Minion Pro", serif;
+  font-family: "Fraunces", "Minion Pro", "Noto Serif SC", serif;
   font-weight: 600;
   color: #9ba8b8;
   margin: 0.25em auto 0.25em auto;
