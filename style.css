@@ -1,17 +1,4 @@
 @font-face {
-    font-family: 'Meera Inimai';
-    src: url('/elements/googlefonts/meerainimai-regular-webfont.woff') format('woff');
-    font-weight: normal;
-    font-style: normal;
-}
-
-@font-face {
-    font-family: 'Homemade Apple';
-    src: url('/elements/googlefonts/HomemadeApple-webfont.woff') format('woff');
-    font-style: normal;
-}
-
-@font-face {
     font-family: 'Minion Pro';
     src: url('/elements/googlefonts/MinionPro-Medium.woff') format('woff');
     font-weight: normal;
@@ -25,37 +12,6 @@
     font-weight: 600;
     font-style: normal;
     font-display: swap;
-}
-
-@font-face {
-    font-family: 'Deneane';
-    src: url('/elements/googlefonts/Deneane.woff') format('woff');
-    font-weight: 100;
-    font-style: normal;
-    font-display: swap;
-}
-
-@font-face {
-    font-family: 'Fraunces';
-    src: url('/elements/googlefonts/Fraunces-Italic.woff') format('woff');
-    font-style: italic;
-    font-display: swap;
-}
-
-@font-face {
-    font-family: 'Fraunces';
-    src: url('/elements/googlefonts/Fraunces.woff') format('woff');
-    font-style: normal;
-    font-display: swap;
-}
-
-
-@font-face {
-    font-family: 'Ukulele Setlist';
-    src: url('/elements/handwrittenfonts/ukulelesetlist-regular-webfont.woff') format('woff');
-    font-weight: normal;
-    font-style: normal;
-    font-display: normal;
 }
 
 /* Standard elements */
