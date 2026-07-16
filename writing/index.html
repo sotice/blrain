@@ -47,103 +47,52 @@
     <main>
       <h1>写作</h1>
 
-      <section>
-        <article>
-          <h2>关于写作</h2>
-          <p>
-            写作对我来说是把脑子里那些模糊的、说不清楚的东西，硬拽出来逼到纸上。过程不舒服，但写完之后脑子里会多出一块空地——这就是继续写的理由。
-          </p>
-          <p>
-            这个页面是我正在写和已经写完的东西的记录。不是清单，更像是个进度看板，提醒自己别停下来。
-          </p>
-        </article>
+      <section class="redbox">
+        <h2>互动叙事</h2>
+        <p>
+          <a href="fiction/libraryofmemory/">《记忆图书馆》</a> »
+          一个关于图书馆和记忆的故事。玩家在书架间穿行，每一本书都通往一段别人的记忆。
+        </p>
+        <p>
+          <a href="fiction/ifcomp2025/">IFComp 参赛作品（计划中）</a> »
+          目标是完成一个短篇互动叙事作品，秋天之前能出完整 demo。
+        </p>
       </section>
 
-      <hr />
-
-      <section>
-        <article>
-          <h2>互动叙事作品</h2>
-          <date>2025年2月</date>
-          <p>我在重新投入互动叙事领域。下面是目前的相关项目：</p>
-          <ul>
-            <li>
-              <strong>未命名的互动小说</strong> —
-              一个关于图书馆和记忆的故事。玩家在书架间穿行，每一本书都通往一段别人的记忆。目前在写大纲和原型分支。
-            </li>
-            <li>
-              <strong>IFComp 参赛作品（计划中）</strong> —
-              目标是完成一个短篇互动叙事作品，秋天之前能出完整 demo。
-            </li>
-            <li>
-              <strong>PyCon 演讲笔记</strong> —
-              基于另一个项目的经验，在整理一份关于"互动叙事中的错误处理"的演讲提纲。
-            </li>
-          </ul>
-          <p>
-            互动叙事吸引我的地方在于：读者同时也是参与者。他们的选择不是装饰，是真实的重量。这种形式和普通写作很不一样，值得花时间探索。
-          </p>
-        </article>
+      <section class="goldbox">
+        <h2>诗歌</h2>
+        <p>
+          <a href="poetry/nightwalk/">《夜行》</a> »
+          城市夜晚的声音，凌晨便利店的灯光。
+        </p>
+        <p style="text-align: right"><a href="poetry/">更多诗歌...</a></p>
       </section>
 
-      <hr />
-
-      <section>
-        <article>
-          <h2>随笔</h2>
-          <p>以下是我在 <code>posts/</code> 目录下用 Markdown 写的随笔，页面会自动加载：</p>
-          <div id="posts"></div>
-          <noscript><p>需要启用 JavaScript 才能加载随笔。</p></noscript>
-        </article>
+      <section class="greenbox">
+        <h2>随笔</h2>
+        <p>用 Markdown 写的随笔，页面自动加载：</p>
+        <div id="posts"></div>
+        <noscript><p>需要启用 JavaScript 才能加载随笔。</p></noscript>
       </section>
 
-      <hr />
-
       <section>
-        <article>
-          <h2>想法本</h2>
-          <p>一个永远在更新的列表，记着那些还没开始写的东西：</p>
-          <ul>
-            <li>一个关于灯塔守护人的超短篇互动小说。</li>
-            <li>一篇关于 email 作为媒介的衰落的文章。</li>
-            <li>关于天气和情绪的关系的一组笔记。</li>
-            <li>一篇关于"buried realness"的评论。</li>
-            <li>给朋友的信合集，可能永远只是念头。</li>
-          </ul>
-          <p>
-            列表越来越长是好事。好想法多过能写完的时间，这不是问题，是奢侈。
-          </p>
-        </article>
-      </section>
-
-      <hr />
-
-      <section>
-        <article>
-          <h2>工具和习惯</h2>
-          <p>
-            主要用 Markdown
-            和纯文本写初稿，用纸笔做大纲。语音备忘录用来记闪念。写完之后会用一段不碰它的时间，过几天再来重读，这时候能看到当时看不到的问题。
-          </p>
-          <p>
-            写作时间是深夜——不是刻意挑的，是只有那个时候周围真的安静下来了。
-          </p>
-          <p>
-            不订计划。或者说订了也不会算数。但总是在写，这一点不用怀疑。<nobr
-              ><span class="cursive">– blrain</span></nobr
-            >
-          </p>
-        </article>
+        <h2>其他</h2>
+        <p>
+          <a href="thoughts/">想法本</a> »
+          一个永远在更新的列表，记着那些还没开始写的东西。
+        </p>
+        <p>
+          <a href="tools/">工具和习惯</a> »
+          Markdown 初稿，纸笔大纲，深夜写作。
+        </p>
       </section>
     </main>
 
     <script src="https://cdn.jsdelivr.net/npm/marked/marked.min.js"></script>
     <script>
       (async function () {
-        // 在这里注册你的随笔文件，新增随笔只需往这个列表加一行
         const posts = [
           { file: "posts/example.md", title: "范文：标题" },
-          // { file: "posts/my-post.md", title: "我的新随笔" },
         ];
 
         const container = document.getElementById("posts");
