@@ -343,12 +343,13 @@ hr {
   position: sticky;
   top: 0;
   z-index: 5;
-  text-align: right;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
   font-size: 1rem;
 }
 
 .siteheader-home {
-  float: left;
   color: #9ba8b8;
   text-decoration: none;
   padding: 5px;
