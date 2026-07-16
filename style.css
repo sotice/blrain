@@ -353,6 +353,7 @@ hr {
   mix-blend-mode: hard-light;
   max-height: 2rem;
   margin-bottom: 0;
+  filter: invert(1) brightness(0.65);
 }
 
 nav {
