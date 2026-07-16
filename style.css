@@ -270,6 +270,10 @@ a:hover {
   margin: 0 1em 0 0;
 }
 
+h1 a {
+  text-decoration: none;
+}
+
 .image::before {
   content: "📷";
 }
