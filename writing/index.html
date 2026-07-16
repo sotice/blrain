@@ -45,32 +45,16 @@
     <main>
       <h1>写作</h1>
 
-      <section class="redbox">
-        <h2>互动叙事</h2>
-        <p>
-          <a href="fiction/libraryofmemory/">《记忆图书馆》</a> »
-          一个关于图书馆和记忆的故事。玩家在书架间穿行，每一本书都通往一段别人的记忆。
-        </p>
-        <p>
-          <a href="fiction/ifcomp2025/">IFComp 参赛作品（计划中）</a> »
-          目标是完成一个短篇互动叙事作品，秋天之前能出完整 demo。
-        </p>
-      </section>
+
 
       <section class="goldbox">
         <h2>诗歌</h2>
-        <p>
-          <a href="poetry/nightwalk/">《夜行》</a> »
-          城市夜晚的声音，凌晨便利店的灯光。
-        </p>
         <p style="text-align: right"><a href="poetry/">更多诗歌...</a></p>
       </section>
 
       <section class="greenbox">
         <h2>随笔</h2>
-        <p>用 Markdown 写的随笔，页面自动加载：</p>
-        <div id="posts"></div>
-        <noscript><p>需要启用 JavaScript 才能加载随笔。</p></noscript>
+        <p style="text-align: right"><a href="essays/">更多随笔...</a></p>
       </section>
 
       <section>
@@ -85,32 +69,5 @@
         </p>
       </section>
     </main>
-
-    <script src="https://cdn.jsdelivr.net/npm/marked/marked.min.js"></script>
-    <script>
-      (async function () {
-        const posts = [
-          { file: "posts/example.md", title: "范文：标题" },
-        ];
-
-        const container = document.getElementById("posts");
-        for (const post of posts) {
-          try {
-            const res = await fetch(post.file);
-            if (!res.ok) continue;
-            const md = await res.text();
-            const html = marked.parse(md);
-            const article = document.createElement("article");
-            article.innerHTML = html;
-            article.style.marginBottom = "1.5em";
-            article.style.paddingBottom = "1em";
-            article.style.borderBottom = "1px dashed #6b7a8a9e";
-            container.appendChild(article);
-          } catch (e) {
-            console.warn("Failed to load:", post.file, e);
-          }
-        }
-      })();
-    </script>
   </body>
 </html>

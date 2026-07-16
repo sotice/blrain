@@ -3,8 +3,8 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>诗歌 | 随笔</title>
-    <meta name="description" content="诗歌存档。" />
+    <title>随笔 | 随笔</title>
+    <meta name="description" content="用 Markdown 写的随笔。" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
@@ -29,22 +29,45 @@
     </div>
 
     <main>
-      <h1>诗歌 <a href="../">⤴</a></h1>
+      <h1>随笔 <a href="../">⤴</a></h1>
 
       <section>
-        <p>诗，和像诗的东西。</p>
+        <p>用 Markdown 写的随笔，页面自动加载：</p>
       </section>
 
       <hr />
 
-      <p>
-        <a href="https://www.poetryfoundation.org/poems/43281/the-lake-isle-of-innisfree" target="_blank">《The Lake Isle of Innisfree》</a> »
-        由威廉·巴特勒·叶芝创作的诗歌，描绘了诗人对爱尔兰湖岛宁静生活的向往和渴望。诗中充满了自然景色的描写，表达了对平静、孤独和内心宁静的追求。
-      </p>
-
-      <hr style="clear: both" />
+      <div id="posts"></div>
+      <noscript><p>需要启用 JavaScript 才能加载随笔。</p></noscript>
 
       <p style="text-align: right"><a href="../">← 返回写作</a></p>
     </main>
+
+    <script src="https://cdn.jsdelivr.net/npm/marked/marked.min.js"></script>
+    <script>
+      (async function () {
+        const posts = [
+          { file: "../posts/example.md", title: "范文：标题" },
+        ];
+
+        const container = document.getElementById("posts");
+        for (const post of posts) {
+          try {
+            const res = await fetch(post.file);
+            if (!res.ok) continue;
+            const md = await res.text();
+            const html = marked.parse(md);
+            const article = document.createElement("article");
+            article.innerHTML = html;
+            article.style.marginBottom = "1.5em";
+            article.style.paddingBottom = "1em";
+            article.style.borderBottom = "1px dashed #6b7a8a9e";
+            container.appendChild(article);
+          } catch (e) {
+            console.warn("Failed to load:", post.file, e);
+          }
+        }
+      })();
+    </script>
   </body>
 </html>
