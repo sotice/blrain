@@ -1,4 +1,0 @@
-[     765ms] [ERROR] Failed to load resource: the server responded with a status of 404 (File not found) @ http://localhost:8080/elements/googlefonts/MinionPro-Medium.woff:0
-[     765ms] [ERROR] Failed to load resource: the server responded with a status of 404 (File not found) @ http://localhost:8080/elements/googlefonts/MinionPro-Semibold.woff:0
-[    2138ms] [ERROR] Failed to load resource: the server responded with a status of 404 (File not found) @ http://localhost:8080/elements/favicon/favicon-32x32.png:0
-[    2142ms] [ERROR] Failed to load resource: the server responded with a status of 404 (File not found) @ http://localhost:8080/elements/favicon/favicon-16x16.png:0
