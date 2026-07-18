@@ -4,7 +4,7 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>随笔 | 随笔</title>
-    <meta name="description" content="用 Markdown 写的随笔。" />
+    <meta name="description" content="随笔存档。" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
@@ -30,38 +30,15 @@
       <h1>随笔 <a href="../">⤴</a></h1>
 
       <hr />
-      
-      <div id="posts"></div>
-      <noscript><p>需要启用 JavaScript 才能加载随笔。</p></noscript>
+
+      <p>
+        <a href="../essays/rashomon/">人性的丑陋与希望</a> »
+        电影《罗生门》观后感。
+      </p>
+
+      <hr style="clear: both" />
 
       <p style="text-align: right"><a href="../">← 返回写作</a></p>
     </main>
-
-    <script src="https://cdn.jsdelivr.net/npm/marked/marked.min.js"></script>
-    <script>
-      (async function () {
-        const posts = [
-          { file: "../posts/example.md", title: "范文：标题" },
-        ];
-
-        const container = document.getElementById("posts");
-        for (const post of posts) {
-          try {
-            const res = await fetch(post.file);
-            if (!res.ok) continue;
-            const md = await res.text();
-            const html = marked.parse(md);
-            const article = document.createElement("article");
-            article.innerHTML = html;
-            article.style.marginBottom = "1.5em";
-            article.style.paddingBottom = "1em";
-            article.style.borderBottom = "1px dashed #6b7a8a9e";
-            container.appendChild(article);
-          } catch (e) {
-            console.warn("Failed to load:", post.file, e);
-          }
-        }
-      })();
-    </script>
   </body>
 </html>
